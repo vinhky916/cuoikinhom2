@@ -1,0 +1,145 @@
+/* style.css */
+
+/* Thiết lập phông chữ và màu nền chung */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFAF0;
+}
+
+/* Định dạng cho thanh trên cùng */
+.top-bar {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #FF1493;
+}
+
+.top-bar .login {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.top-bar .login a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #FF1493;
+    font-weight: bold;
+}
+
+/* Menu điều hướng */
+.main-nav {
+    background-color: #FF69B4;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-nav li {
+    float: left;
+}
+
+.main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.main-nav li a:hover {
+    background-color: #FF1493;
+}
+
+/* Phần nội dung chính */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #FF1493;
+    font-size: 2em;
+}
+
+/* Định dạng cho danh sách bài học và trò chơi */
+.lesson-list,
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #FFF0F5;
+    border: 2px solid #FFB6C1;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 3px 3px 5px #888888;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card h3 {
+    color: #FF1493;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF69B4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card a:hover {
+    background-color: #FF1493;
+}
+
+/* Footer */
+footer {
+    background-color: #FFD700;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Thiết lập cho wrapper */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #FFD700;
+    padding: 10px;
+    text-align: center;
+}
